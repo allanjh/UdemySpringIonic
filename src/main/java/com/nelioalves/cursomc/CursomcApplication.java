@@ -62,6 +62,12 @@ public class CursomcApplication implements CommandLineRunner{
 		
 		Categoria cat1 = new Categoria(null,"Informatica");
 		Categoria cat2 = new Categoria(null,"Escritorio");
+		Categoria cat3 = new Categoria(null,"Cama, Mesa e Banho");
+		Categoria cat4 = new Categoria(null,"Eletrônicos");
+		Categoria cat5 = new Categoria(null,"Móveis");
+		Categoria cat6 = new Categoria(null,"Jardinagem");
+		Categoria cat7 = new Categoria(null,"Roupas");
+		Categoria cat8 = new Categoria(null,"Sapatos");
 		
 		Produto p1 = new Produto(null,"Computador", 2000.00);
 		Produto p2 = new Produto(null,"Impressora", 800.00);
@@ -115,7 +121,7 @@ public class CursomcApplication implements CommandLineRunner{
 		p2.getItens().addAll(Arrays.asList(ip3));
 		p3.getItens().addAll(Arrays.asList(ip2));
 		
-		categoriaRepo.saveAll(Arrays.asList(cat1, cat2));
+		categoriaRepo.saveAll(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8));
 		produtoRepo.saveAll(Arrays.asList(p1, p2, p3));
 		estadoRepo.saveAll(Arrays.asList(est1,est2));
 		cidadeRepo.saveAll(Arrays.asList(c1,c2,c3));
