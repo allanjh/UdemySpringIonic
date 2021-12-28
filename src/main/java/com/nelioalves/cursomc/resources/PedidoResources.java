@@ -17,7 +17,7 @@ import com.nelioalves.cursomc.domain.Pedido;
 import com.nelioalves.cursomc.services.PedidoService;
 
 @RestController
-@RequestMapping(value="/Pedidos")
+@RequestMapping(value="/pedidos")
 public class PedidoResources {
 	
 	@Autowired
